@@ -1,24 +1,37 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body{
     background-image: url("images/forest-background.jpg");
-    margin: 5% 10%;
+    margin: 40px 40px;
+    
 }
 
 .quiz-content{
     background-color: gold;
     margin: auto;
+    border-radius: 5px;
 }
 
 h1{
-    padding-top: 10%;
     text-align: center;
+    color: #5A781D;
+    font-family: 'Pacifico', cursive;
+    font-size: 20px;
 }
 
-h2, h3{
+.finalScore, .quizHeader{
+    padding-top: 10%;
+}
+
+h3{
     text-align: center;
+    color: #3E3E3E;
+    font-size: 14px;
+    font-family: 'Cabin Sketch', cursive;
 }
 
 .intro, .question{
@@ -29,26 +42,36 @@ h2, h3{
     padding-bottom: 10%;
 }
 
-button{
-    margin-top: 30px;
-    margin-bottom: 10px;
-    margin-left: auto;
-    margin-right: auto;
+ul{
+    font-family: 'Cabin Sketch', cursive;
+    padding-top: 20px;
+    color: #3E3E3E;
 }
 
 li{
-    margin-left: 40%;
+    text-align: center;
     list-style: none;
-    padding-bottom: 5px;
+    padding-bottom: 5px;  
 }
 
 .images{
-    padding-bottom: 10px;
-    width: 400px;
+    width: 220px;
+    border-radius: 5px;
+}
+
+.answerMessage, .resultsMessage{
+    padding-top: 10px;
 }
 
 fieldset{
     border: none;
+    font-family: 'Cabin Sketch', cursive;
+    color: #3E3E3E;
+    font-size: 14px;
+}
+
+.questionText, h3{
+    padding: 10px 10px 20px 10px;
 }
 
 legend, button, input{
@@ -57,8 +80,8 @@ legend, button, input{
 
 
 label{
-    text-align: left;
-    margin-left: 15%
+    text-align: center;
+    padding-top: 3px;
 }
 
 .introPage, .questionPage, .answerPage, .resultsPage, fieldset{
@@ -70,3 +93,68 @@ label{
 form{
     vertical-align: baseline;
 }
+
+button{
+    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+    background-color: rgba(131, 92, 92, 0.575);
+    border: none;
+    height: 40px;
+    width: 100px;
+    font-family: 'Pacifico', cursive;
+    border-radius: 3px;
+}
+
+button:hover{
+    background-color: rgb(241, 172, 172)
+}
+
+.sizeMe{
+    font-size: 20px;
+}
+
+.finalScoreTotal{
+    color: #3E3E3E;
+    font-family: 'Cabin Sketch', cursive;
+    padding: 20px 0 20px;
+}
+
+@media all and (min-width: 480px){
+    h1{
+        font-size: 24px;
+    }
+
+    fieldset, h3{
+        font-size: 16px;
+    }
+    
+    .images{
+        width: 380px;
+    }
+}
+
+@media all and (min-width: 700px){
+    h1{
+        font-size: 30px;
+    }
+
+    fieldset, h3{
+        font-size: 20px;
+    }
+
+    .quizHeader, .finalScore{
+        padding-top: 62px;
+    }
+
+    .images{
+        width: 700px;
+    }
+
+    body{
+        margin: 60px;
+    }
+}
+
