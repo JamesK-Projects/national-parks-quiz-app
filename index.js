@@ -101,7 +101,7 @@ function createPage(questionIndex){
 function correctAnswer(){
     $('.answerPage').html(
         `<h3>${STORE[questionNumber].correctAnswer} is Correct!</h3>
-        <img src="/images/${questionNumber}.jpg" alt="${STORE[questionNumber].correctAnswer}" class="images"><br>
+        <img src="images/${questionNumber}.jpg" alt="${STORE[questionNumber].correctAnswer}" class="images"><br>
         <button type="button" class="nextButton">Next</button>`
     );
     updateScore();
@@ -114,7 +114,7 @@ function incorrectAnswer(){
     $('.answerPage').html(
         `<h3>Sorry, that's incorrect...</h3>
         <h3 class="correctAnswer">The answer is ${STORE[questionNumber].correctAnswer}</h3>
-        <img src="/images/${questionNumber}.jpg" alt="${STORE[questionNumber].correctAnswer}" class="images"><br>
+        <img src="images/${questionNumber}.jpg" alt="${STORE[questionNumber].correctAnswer}" class="images"><br>
         <button type="button" class="nextButton">Next</button>`
     );
 }
@@ -172,7 +172,7 @@ function displayResults(){
         `<h1 class="finalScore">Final Score:</h1>
         <h1 class="finalScoreTotal">${score}/10</h1>
         <h3 class="resultsMessage">${resultsMessage}</h3>
-        <img src="/images/${resultsImage}.jpg" class="images" alt="${imageAlt}">
+        <img src="images/${resultsImage}.jpg" class="images" alt="${imageAlt}">
         <button type="button" class="restartQuiz">Restart Quiz</button>`
     )
 };
